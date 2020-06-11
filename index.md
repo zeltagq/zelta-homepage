@@ -54,7 +54,7 @@ $ zelta login
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/login.gif">
 </p>
 
-*Send message to a single user*
+*Send a message*
 ```sh
 $ zelta send
 ```
@@ -68,4 +68,38 @@ $ zelta group
 ```
 <p align="center">
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/group-creation.gif">
+</p>
+
+*Join a public group using the passphrase. Group names are referred to using the @ symbol.*
+```sh
+$ zelta join <group>
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/join-grp.gif">
+</p>
+
+*If you try joining a private group, zelta mentions that you need an invite.*
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/no-invite-join.gif">
+</p>
+
+*Invite a user to your group (admin privilege). Use @ for mentioning group name.*
+```sh
+$ zelta invite <user> <group>
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/send-invite.gif">
+</p>
+
+*Accept a group invite. You will receive the invite in your inbox.*
+```sh
+$ zelta accept-invite <group>
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/accept-invite.gif">
+</p>
+
+*To send messages to a group, just address the message to a group name using @. Needless to say, you need to be a member or admin of the group. Remember that @ tells zelta that you intend to send the message to a group. Without @ the message may be sent to a user with the same username as the group name.*
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/group-msg.gif">
 </p>
