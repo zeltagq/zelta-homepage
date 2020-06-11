@@ -103,3 +103,30 @@ $ zelta accept-invite <group>
 <p align="center">
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/group-msg.gif">
 </p>
+
+*You can always change the access level of your groups (admin privilege)*
+```sh
+$ zelta set-public <group>
+```
+```sh
+$ zelta set-private <group>
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/public-private.gif">
+</p>
+
+*Check your messages using the inbox command. Group messages appear in a user@group format. The time shown is GMT unless you have configured your local timezone*
+```sh
+$ zelta inbox
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/inbox.gif">
+</p>
+
+*Configure your local timezone using the timezone configuration wizard. For your security and anonymity, this info is not sent to the server. You will have to re-configure your timezone each time you are on a new device or each time you perform a fresh install. If you dont do this all incoming messages will show the GMT time.*
+```sh
+$ zelta timezone
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/timezone.gif">
+</p>
