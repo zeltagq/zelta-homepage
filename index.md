@@ -46,7 +46,7 @@ $ zelta register
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/register.gif">
 </p>
 
-*Login*
+*Login. Once you login, the access token is valid for 24 hrs. You should logout after each session on an untrusted device.*
 ```sh
 $ zelta login
 ```
@@ -115,7 +115,7 @@ $ zelta set-private <group>
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/public-private.gif">
 </p>
 
-*Check your messages using the inbox command. Group messages appear in a user@group format. The time shown is GMT unless you have configured your local timezone*
+*Check your messages using the inbox command. Group messages appear in a user@group format. The time shown is GMT unless you have configured your local timezone.*
 ```sh
 $ zelta inbox
 ```
@@ -129,4 +129,36 @@ $ zelta timezone
 ```
 <p align="center">
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/timezone.gif">
+</p>
+
+*List all the members of a group. Needless to say, you need to be a member yourself.*
+```sh
+$ zelta members <group>
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/members.gif">
+</p>
+
+*Leave a group. If you are the admin, the oldest member of the group becomes the new admin.*
+```sh
+$ zelta leave <group>
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/leave.gif">
+</p>
+
+*Kick a group member (admin privilege)*
+```sh
+$ zelta kick <user> <group>
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/kick.gif">
+</p>
+
+*Logout. You should logout after each session on an untrusted device. If you dont logout, the access token expires in 24 hrs.*
+```sh
+$ zelta logout
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/logout.gif">
 </p>
