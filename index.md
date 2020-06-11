@@ -33,7 +33,7 @@ yarn global add zelta
 
 ### Commands
 
-*Displays a list of all the available commands*
+*Display a list of all the available commands*
 ```sh
 $ zelta help
 ```
@@ -42,3 +42,14 @@ $ zelta help
 ```sh
 $ zelta register
 ```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/register.gif">
+</p>
+
+*Login*
+```sh
+$ zelta login
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/login.gif">
+</p>
