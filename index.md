@@ -53,3 +53,19 @@ $ zelta login
 <p align="center">
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/login.gif">
 </p>
+
+*Send message to a single user*
+```sh
+$ zelta send
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/send-msg.gif">
+</p>
+
+*Create a group. There are two types of groups in zelta : public and private. Anyone can join a public group using the passphrase but private groups require an invite to join. The invitation is sent by the admin, who is the creator of the group. Currently in beta the group limit is 50 members.*
+```sh
+$ zelta group
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/group-creation.gif">
+</p>
