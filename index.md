@@ -1,3 +1,6 @@
+### What is Zelta?
+*Zelta is a secure and anonymous messaging service. The zelta project thrives to provide an environment for highly confidential conversations as well as your daily small talk. It only has a cli client to protect you against various web and mobile vulnerabilities. It is cross platform compatible with the only runtime dependency being Node JS.*
+
 ### Architecture (High Level Overview)
 * Zelta has a cli client, a server tier and a database tier.
 * The server tier has 2 types of servers : Application Server (zelta-server) and Authentication Server (ZUM)
@@ -18,7 +21,7 @@
 * Zelta's claims are backed up by code.
 * You will find the complete code of the cli client as well as the server tier on GitHub.
 * Do leave a star and share the word if you like Zelta.
-* You can always download the code and host your private Zelta and ZUM servers.
+* You can also download the code and host your private zelta server. You can then configure the client to contact your private server by replacing the application server url in the main.js file.
 
 ### Requirement
 Node JS (v8 and above)
