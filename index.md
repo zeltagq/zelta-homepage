@@ -1,4 +1,4 @@
-### What is Zelta?
+### Zelta
 *Zelta is a secure and anonymous messaging service. The zelta project thrives to provide an environment for highly confidential conversations as well as your daily small talk. It only has a cli client to protect you against various web and mobile vulnerabilities. It is cross platform compatible with the only runtime dependency being Node JS.*
 
 ### Architecture (High Level Overview)
