@@ -18,14 +18,13 @@
 * User passwords and group passphrases are converted to salted hashes before they are stored in the database (Bcrypt JS)
 * Messages are encrypted using AES (Crypto JS) with rotating master keys maintained by the server. The server maintains a   total of 8 rotating master keys. These keys rotate after each use.
 * All sensitive communication is carried out using signed json web tokens.
-* ZUM maintains a separate set of master keys and signing keys. Master keys are used by the requesting server to sign their jwt tokens while the signing keys are used by ZUM to sign authorization tokens. These signing keys are only created when login requests are received.
-* Finally as Zelta is an anonymous messaging service, you can always drop your current username for a new one!
+* The authentication server maintains a separate set of master keys and signing keys. Master keys are used by the requesting zelta server to sign its jwt tokens while signing keys are used by the authentication server to sign authorization tokens. These signing keys are only created when login requests are received.
 
 ### Open Source
 * Zelta's claims are backed up by code.
 * You will find the complete code of the cli client as well as the server tier on GitHub.
 * Do leave a star and share the word if you like Zelta.
-* You can also download the code and host your private zelta server. You can then configure the client to contact your private server by replacing the application server url in the main.js file.
+* You can download the source code and host your private zelta server. You can then configure the client to contact your private server by replacing the application server url in the main.js file.
 
 ### Requirement
 Node JS (v8 and above)
