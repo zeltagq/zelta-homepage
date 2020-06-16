@@ -16,9 +16,9 @@
 * As Zelta works in the terminal, it does not log your ip address nor does it store cookies and trackers.
 * Your messages are only stored until you see them. Once you view them, all records of their existence are completely erased.    So do remember to screenshot important messages.
 * User passwords and group passphrases are converted to salted hashes before they are stored in the database (Bcrypt JS)
-* Messages are encrypted using AES (Crypto JS) with rotating master keys maintained by the server. The server maintains a   total of 8 rotating master keys. These keys rotate after each use.
+* Messages are encrypted using AES (Crypto JS) with rotating master keys maintained by the server. The server maintains a   total of 8 rotating master keys. These keys change after each use.
 * All sensitive communication is carried out using signed json web tokens.
-* The authentication server maintains a separate set of master keys and signing keys. Master keys are used by the requesting zelta server to sign its jwt tokens while signing keys are used by the authentication server to sign authorization tokens. These signing keys are only created when login requests are received.
+* The authentication server maintains a separate set of rotating master keys and signing keys. Master keys are used by the requesting zelta server to sign its jwt tokens while signing keys are used by the authentication server to sign authorization tokens. These signing keys are only created when login requests are received.
 
 ### Open Source
 * Zelta's claims are backed up by code.
