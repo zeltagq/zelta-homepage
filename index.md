@@ -7,13 +7,13 @@
 
 ### Architecture (High Level Overview)
 * Zelta has a cli client, a server tier and a database tier.
-* The server tier has 2 types of servers : Application Server (zelta-server) and Authentication Server (ZUM)
-* The client only communicates with the Zelta server. All communication with the ZUM server is carried out by the Zelta server.
+* The server tier has 2 types of servers : Application Server (zelta-server) and Authentication Server (zum)
+* The client only communicates with the zelta server. All communication with the zum server is carried out by the zelta server.
 * The database tier consists of a Mongodb cluster.
 
 ### Security & Encryption (High Level Overview)
 * Zelta does not collect any personal information.
-* As Zelta works in the terminal, it does not log your ip address nor does it store cookies and trackers.
+* As zelta works in the terminal, it does not log your ip address nor does it store cookies and trackers.
 * Your messages are only stored until you see them. Once you view them, all records of their existence are completely erased.    So do remember to screenshot important messages.
 * User passwords and group passphrases are converted to salted hashes before they are stored in the database (Bcrypt JS)
 * Messages are encrypted using AES (Crypto JS) with rotating master keys maintained by the application server. The application server maintains a total of 8 rotating master keys. These keys change after each use.
@@ -22,8 +22,7 @@
 
 ### Open Source
 * Zelta's claims are backed up by code.
-* You will find the complete code of the cli client as well as the server tier on GitHub.
-* Do leave a star and share the word if you like Zelta.
+* You can find the complete code of the client and application server on GitHub.
 * You can download the source code and host your private zelta server. You can then configure the client to contact your private server by replacing the application server url in the main.js file.
 
 ### Requirement
