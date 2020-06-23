@@ -13,7 +13,7 @@
 
 ### Security & Encryption (High Level Overview)
 * Zelta does not collect any personal information.
-* As zelta works in the terminal, it does not log your ip address nor does it store cookies and trackers.
+* Zelta does not log your ip address nor does it store cookies and trackers.
 * Your messages are only stored until you see them. Once you view them, all records of their existence are completely erased.    So do remember to screenshot important messages.
 * User passwords and group passphrases are converted to salted hashes before they are stored in the database (Bcrypt JS)
 * Messages are encrypted using AES (Crypto JS) with rotating master keys maintained by the application server. The application server maintains a total of 8 rotating master keys. These keys change after each use.
