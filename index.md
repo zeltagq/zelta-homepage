@@ -5,25 +5,14 @@
 ### Project Zelta
 *Zelta is a secure and anonymous messaging service. It only has a cli client to protect you against various web and mobile vulnerabilities. It is cross platform compatible with the only runtime dependency being Node JS.*
 
-### Architecture (High Level Overview)
-* Zelta has a cli client, a server tier and a database tier.
-* The server tier has 2 types of servers : Application Server (zelta-server) and Authentication Server (zum)
-* The client only communicates with the zelta server. All communication with the zum server is carried out by the zelta server.
-* The database tier consists of a Mongodb cluster.
-
 ### Security & Encryption (High Level Overview)
 * Zelta does not collect any personal information.
 * Zelta does not log your ip address nor does it store cookies and trackers.
 * Your messages are only stored until you see them. Once you view them, all records of their existence are completely erased. So do remember to screenshot important messages.
 * User passwords and group passphrases are converted to salted hashes before they are stored in the database (Bcrypt JS)
-* Messages are encrypted using AES (Crypto JS) with rotating master keys produced by the application server. The application server maintains a total of 100 rotating master keys. These keys change after each use.
+* The database server hardware encrypts all data at rest.
+* Messages are encrypted using AES (Crypto JS) with rotating master keys produced by the application server.
 * All sensitive communication is carried out using signed json web tokens.
-* The authentication server maintains a separate set of rotating master keys and signing keys. Master keys are used by the requesting zelta server to sign its jwt tokens while signing keys are used by the authentication server to sign authorization tokens. These signing keys are only created when login requests are received.
-
-### Open Source
-* Zelta's claims are backed up by code.
-* You can find the complete code of the client and application server on GitHub.
-* You can download the source code and host your private zelta server. You can then configure the client to contact your private server by replacing the application server url in the main.js file.
 
 ### Requirement
 Node JS (v8 and above)
