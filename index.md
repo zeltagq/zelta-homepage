@@ -3,7 +3,7 @@
 </head>
 
 ### Project Zelta
-*Zelta is a secure and anonymous messaging service. The zelta project aims to provide a secure environment for highly confidential conversations as well as mundane small talk. It only has a cli client to protect you against various web and mobile vulnerabilities. It is cross platform compatible with the only runtime dependency being Node JS.*
+*Zelta is a secure and anonymous messaging service. It only has a cli client to protect you against various web and mobile vulnerabilities. It is cross platform compatible with the only runtime dependency being Node JS.*
 
 ### Architecture (High Level Overview)
 * Zelta has a cli client, a server tier and a database tier.
@@ -14,9 +14,9 @@
 ### Security & Encryption (High Level Overview)
 * Zelta does not collect any personal information.
 * Zelta does not log your ip address nor does it store cookies and trackers.
-* Your messages are only stored until you see them. Once you view them, all records of their existence are completely erased.    So do remember to screenshot important messages.
+* Your messages are only stored until you see them. Once you view them, all records of their existence are completely erased. So do remember to screenshot important messages.
 * User passwords and group passphrases are converted to salted hashes before they are stored in the database (Bcrypt JS)
-* Messages are encrypted using AES (Crypto JS) with rotating master keys maintained by the application server. The application server maintains a total of 8 rotating master keys. These keys change after each use.
+* Messages are encrypted using AES (Crypto JS) with rotating master keys produced by the application server. The application server maintains a total of 100 rotating master keys. These keys change after each use.
 * All sensitive communication is carried out using signed json web tokens.
 * The authentication server maintains a separate set of rotating master keys and signing keys. Master keys are used by the requesting zelta server to sign its jwt tokens while signing keys are used by the authentication server to sign authorization tokens. These signing keys are only created when login requests are received.
 
