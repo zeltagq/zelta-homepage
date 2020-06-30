@@ -3,7 +3,7 @@
 </head>
 
 ### Project Zelta
-![NPM Downloads](https://img.shields.io/npm/dw/zelta) [![made-with-node](https://img.shields.io/badge/made%20with-Node%20JS-green.svg)](https://nodejs.org/en/) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://zeltagq.mit-license.org/) <br>
+[![NPM Downloads](https://img.shields.io/npm/dw/zelta)](https://www.npmjs.com/package/zelta) [![made-with-node](https://img.shields.io/badge/made%20with-Node%20JS-green.svg)](https://nodejs.org/en/) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://zeltagq.mit-license.org/) <br>
 *Zelta is a secure and anonymous messaging service. It only has a cli client to protect you against various web and mobile vulnerabilities. It is cross platform compatible with the only runtime dependency being Node JS.*
 
 ### Security & Encryption (High Level Overview)
