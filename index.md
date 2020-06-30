@@ -12,7 +12,7 @@
 * Your messages are only stored until you see them. Once you view them, all records of their existence are completely erased. So do remember to screenshot important messages.
 * User passwords and group passphrases are converted to salted hashes before they are stored in the database (Bcrypt JS)
 * The database server hardware encrypts all data at rest.
-* Messages are encrypted using AES (Crypto JS) with rotating master keys produced by the application server.
+* Messages are encrypted using AES (Crypto JS) with rotating cryptographic keys produced by the application server.
 * All sensitive communication is carried out using signed json web tokens.
 
 ### Requirement
