@@ -11,7 +11,7 @@
 * Your messages are only stored until you see them. Once you view them, all records of their existence are completely erased. So do remember to screenshot important messages.
 * User passwords and group passphrases are converted to salted hashes before they are stored in the database (Bcrypt JS)
 * The database server hardware encrypts all data at rest.
-* Messages are encrypted using AES (Crypto JS) with rotating cryptographic keys produced by the application server.
+* Messages are encrypted using AES-256 (Crypto JS) with rotating cryptographic keys produced by the application server.
 * All sensitive communication is carried out using signed json web tokens.
 
 ### Requirement
@@ -160,5 +160,5 @@ $ zelta logout
 <br><br>
 <hr style="height:10px;border-width:10px;color:gray;background-color:gray">
 <p align="center"><b>CREATED BY : ZAYGOZI</b></p>
-<p align="center"><a href = "https://www.linkedin.com/in/zaygo/">Linkedin</a> &nbsp&nbsp <a href = "https://github.com/zaygozi">Github</a></p>
+<p align="center"><a href = "https://www.linkedin.com/in/zaygo/">Linkedin</a> | <a href = "https://github.com/zaygozi">Github</a></p>
 <hr style="height:10px;border-width:10px;color:gray;background-color:gray">
