@@ -3,7 +3,6 @@
 </head>
 
 ### Project Zelta
-[![NPM Downloads](https://img.shields.io/npm/dw/zelta)](https://www.npmjs.com/package/zelta) [![made-with-node](https://img.shields.io/badge/made%20with-Node%20JS-green.svg)](https://nodejs.org/en/) [![linkedin](https://img.shields.io/badge/made%20by-zaygo-blue.svg)](https://www.linkedin.com/in/zaygo/)  <br>
 *Zelta is a secure and anonymous messaging service. It only has a cli client to protect you against various web and mobile vulnerabilities. It is cross platform compatible with the only runtime dependency being Node JS.*
 
 ### Security & Encryption (High Level Overview)
@@ -157,3 +156,11 @@ $ zelta logout
 <p align="center">
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/logout.gif">
 </p>
+
+<br><br>
+<hr style="height:10px;border-width:10px;color:gray;background-color:gray">
+<footer>
+  <p align="center"><b>CREATED BY : ZAYGOZI</b></p>
+  <p align="center"><a href = "https://www.linkedin.com/in/zaygo/">Linkedin</a> &nbsp&nbsp <a href = "https://github.com/zaygozi">Github</a></p>
+</footer>
+<hr style="height:10px;border-width:10px;color:gray;background-color:gray">
