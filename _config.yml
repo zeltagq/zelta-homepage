@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
 title: <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/logo.png" alt = "Zelta">
-description: [![version](https://img.shields.io/badge/version-v0.5%20β-green.svg)](https://nodejs.org/en/)
+description: [![version](https://img.shields.io/badge/version-v0.5%20β-green.svg)]
 github:
   is_project_page: false
