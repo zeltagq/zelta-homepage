@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
 title: <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/logo.png" alt = "Zelta">
-description: <br><br><br><img src = "https://img.shields.io/badge/version-0.5%20beta-purple.svg?style=for-the-badge" alt = "version"> &nbsp&nbsp <img src = "https://img.shields.io/npm/dw/zelta?style=for-the-badge" alt = "downloads"> &nbsp&nbsp <img src = "https://img.shields.io/badge/made%20with-Node%20JS-yellow.svg?style=for-the-badge" alt = "made-with"> &nbsp&nbsp <img src = "https://img.shields.io/badge/server-Ireland-magenta.svg?style=for-the-badge" alt = "server"> &nbsp&nbsp <img src = "https://img.shields.io/badge/status-Maintenance-red.svg?style=for-the-badge" alt = "status">
+description: <br><br><br><img src = "https://img.shields.io/badge/version-0.5%20beta-purple.svg?style=for-the-badge" alt = "version"> &nbsp&nbsp <img src = "https://img.shields.io/npm/dw/zelta?style=for-the-badge" alt = "downloads"> &nbsp&nbsp <img src = "https://img.shields.io/badge/made%20with-Node%20JS-yellow.svg?style=for-the-badge" alt = "made-with"> &nbsp&nbsp <img src = "https://img.shields.io/badge/server-Ireland-magenta.svg?style=for-the-badge" alt = "server"> &nbsp&nbsp <img src = "https://img.shields.io/badge/status-Up-darkgreen.svg?style=for-the-badge" alt = "status">
 github:
   is_project_page: false
