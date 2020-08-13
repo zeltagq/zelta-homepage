@@ -6,6 +6,7 @@
 * The authentication system used by zelta has now been open sourced.
 * The source code can be found at [ZUM](https://github.com/zumapi)
 * Stable version with major improvements in encryption and performance coming soon!
+* Upcoming features : Live chat
 
 ### Project Zelta
 *Zelta is a secure and anonymous messaging service. It only has a cli client to protect you against various web and mobile vulnerabilities. It is cross platform compatible with the only runtime dependency being Node JS.*
