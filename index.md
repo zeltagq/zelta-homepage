@@ -18,7 +18,7 @@
 * User passwords and group passphrases are converted to salted hashes before they are stored in the database (Bcrypt JS)
 * The database server hardware encrypts all data at rest.
 * Messages are encrypted using AES-256 (Crypto JS) with rotating cryptographic keys produced by the application server.
-* All sensitive communication is carried out using signed json web tokens.
+* All sensitive communication is carried out using signed json web tokens over https.
 
 ### Requirement
 Node JS (v8 and above)
