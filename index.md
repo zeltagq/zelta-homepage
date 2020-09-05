@@ -5,8 +5,8 @@
 ### Updates
 Update Priority : Breaking changes | Required update
 * Stable version 1.0 (Code Blue) is live!
-* Security : A key id pool was used to communicate the key value to the server for signing jwt during beta. This could pose a security threat because of the limited number of key ids. In this version a new key as well as a new key id is generated for each use. The server now runs a cron job to automatically remove old used keys from the database.
-* New features : Live Chat
+* Security : A key id pool was used to communicate the key value to the server for signing jwt or encrypting messages during beta. This could pose a security threat because of the finite number of key ids in the pool. In this version a new key as well as a unique key id is generated for each use.
+* New features : Live Chat, Server Regions
 
 <p align="center">
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/simple-chat-1.gif">
@@ -36,7 +36,7 @@ npm i -g zelta
 yarn global add zelta
 ```
 
-### Commands
+### General
 
 *Display a list of all the available commands*
 ```sh
@@ -59,6 +59,8 @@ $ zelta login
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/login.gif">
 </p>
 
+### Messaging
+
 *Send a message*
 ```sh
 $ zelta send
@@ -66,6 +68,8 @@ $ zelta send
 <p align="center">
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/send-msg.gif">
 </p>
+
+### Groups
 
 *Create a group. There are two types of groups in zelta : public and private. Anyone can join a public group using the passphrase but private groups require an invite to join. The invitation is sent by the admin, who is the creator of the group. Currently the group limit is 50 members.*
 ```sh
@@ -120,22 +124,6 @@ $ zelta set-private <group>
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/public-private.gif">
 </p>
 
-*Check your messages using the inbox command. Group messages appear in a user@group format. The time shown is GMT unless you have configured your local timezone.*
-```sh
-$ zelta inbox
-```
-<p align="center">
-  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/inbox.gif">
-</p>
-
-*Configure your local timezone using the timezone configuration wizard. For your security and anonymity, this info is not sent to the server. You will have to re-configure your timezone each time you are on a new device or each time you perform a fresh install. If you dont do this all incoming messages will show the GMT time.*
-```sh
-$ zelta timezone
-```
-<p align="center">
-  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/timezone.gif">
-</p>
-
 *List all the members of a group. Needless to say, you need to be a member yourself.*
 ```sh
 $ zelta members <group>
@@ -159,6 +147,28 @@ $ zelta kick <user> <group>
 <p align="center">
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/kick.gif">
 </p>
+
+### Inbox
+
+*Check your messages using the inbox command. Group messages appear in a user@group format. The time shown is GMT unless you have configured your local timezone.*
+```sh
+$ zelta inbox
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/inbox.gif">
+</p>
+
+### Timezone
+
+*Configure your local timezone using the timezone configuration wizard. For your security and anonymity, this info is not sent to the server. You will have to re-configure your timezone each time you are on a new device or each time you perform a fresh install. If you dont do this all incoming messages will show the GMT time.*
+```sh
+$ zelta timezone
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/timezone.gif">
+</p>
+
+### Chat
 
 *Create a chatroom*
 ```sh
@@ -214,6 +224,8 @@ $ zelta chat
 *If you have not used the ```timezone``` command to configure your local timezone, UTC/GMT time is shown by default.*
 
 *For emojis you can use an OS provided emoji panel or use the following syntax - ```:emoji_name:``` Example - ```:smile:``` This will render as a smiley emoji for the receiver. Refer this list for emoji names : [emoji-list](https://raw.githubusercontent.com/omnidan/node-emoji/master/lib/emoji.json)*
+
+### Logout
 
 *Logout. You should logout after each session on an untrusted device. If you dont logout, the access token expires in 24 hrs.*
 ```sh
