@@ -4,6 +4,8 @@
 
 ### Updates
 * Stable version 1.0 (Code Blue) is live!
+* Update Priority : Breaking changes | Required update
+* Security : A key id pool was used to communicate the key value to the server for signing jwt during beta. This could pose a security threat because of the limited number of key ids. In this version a new key as well as a new key id is generated for each use. The server now runs a cron job to automatically remove old used keys from the database.
 * New features : Live Chat
 
 <p align="center">
@@ -65,7 +67,7 @@ $ zelta send
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/send-msg.gif">
 </p>
 
-*Create a group. There are two types of groups in zelta : public and private. Anyone can join a public group using the passphrase but private groups require an invite to join. The invitation is sent by the admin, who is the creator of the group. Currently in beta the group limit is 50 members.*
+*Create a group. There are two types of groups in zelta : public and private. Anyone can join a public group using the passphrase but private groups require an invite to join. The invitation is sent by the admin, who is the creator of the group. Currently the group limit is 50 members.*
 ```sh
 $ zelta group
 ```
@@ -211,7 +213,7 @@ $ zelta chat
 
 *If you have not used the ```timezone``` command to configure your local timezone, UTC/GMT time is shown by default.*
 
-*For emojis you can use an OS provided emoji panel or use the following syntax - ```:emoji_name:``` Example : ```:smile:``` This will render as a smiley emoji for the receiver. Refer this list for emoji names : [emoji-list](https://raw.githubusercontent.com/omnidan/node-emoji/master/lib/emoji.json)*
+*For emojis you can use an OS provided emoji panel or use the following syntax - ```:emoji_name:``` Example - ```:smile:``` This will render as a smiley emoji for the receiver. Refer this list for emoji names : [emoji-list](https://raw.githubusercontent.com/omnidan/node-emoji/master/lib/emoji.json)*
 
 *Logout. You should logout after each session on an untrusted device. If you dont logout, the access token expires in 24 hrs.*
 ```sh
