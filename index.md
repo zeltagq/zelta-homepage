@@ -208,7 +208,7 @@ $ zelta typing-effect <value>
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/typing-chat.gif">
 </p>
 
-*You can customize the typing speed by setting the delay (in ms) between the printing of each character. Use the ```typing-delay``` command. Recommended value is between 100 - 130. Default is 115.*
+*Customize the typing speed by setting the delay (in ms) between the printing of each character. Use the ```typing-delay``` command. Recommended value is between 100 - 130. Default is 115.*
 ```sh
 $ zelta typing-delay 120
 ```
