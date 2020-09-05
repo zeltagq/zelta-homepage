@@ -193,6 +193,20 @@ $ zelta typing-effect <value>
 $ zelta typing-delay 120
 ```
 
+*Join a chatroom*
+```sh
+$ zelta chat
+```
+*You will need to be connected to the same chat server as the chatroom and you must know the room name and passphrase. Currently there is no invitation system implemented into chat. But you may manually invite the person through a personal message (Refer : ```zelta send```)*
+
+*Madbot is the chat moderator. It recognizes these commands:*
+* ```members``` : List all the members in the room
+* ```exit``` or ```leave``` : Exit the chat
+* ```mad fact``` or ```mad facts``` : Bot tells you a random fact picked from wikipedia
+* ```destroy``` : Only takes effect when used by the room creator. Destroys the room and releases the room name. Gives a 30 second headstart.
+
+*If you have not used the ```timezone``` command to configure your local timezone, UTC/GMT time is shown by default.*
+
 *Logout. You should logout after each session on an untrusted device. If you dont logout, the access token expires in 24 hrs.*
 ```sh
 $ zelta logout
