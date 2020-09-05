@@ -3,8 +3,8 @@
 </head>
 
 ### Updates
+Update Priority : Breaking changes | Required update
 * Stable version 1.0 (Code Blue) is live!
-* Update Priority : Breaking changes | Required update
 * Security : A key id pool was used to communicate the key value to the server for signing jwt during beta. This could pose a security threat because of the limited number of key ids. In this version a new key as well as a new key id is generated for each use. The server now runs a cron job to automatically remove old used keys from the database.
 * New features : Live Chat
 
