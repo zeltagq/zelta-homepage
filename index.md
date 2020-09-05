@@ -197,6 +197,10 @@ $ zelta typing-delay 120
 ```sh
 $ zelta chat
 ```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/join-chat.gif">
+</p>
+
 *You will need to be connected to the same chat server as the chatroom and you must know the room name and passphrase. Currently there is no invitation system implemented into chat. But you may manually invite the person through a personal message (Refer : ```zelta send```)*
 
 *Madbot is the chat moderator. It recognizes these commands:*
