@@ -21,7 +21,7 @@
 * The database server hardware encrypts all data at rest.
 * Messages are encrypted using AES-256 with rotating cryptographic keys produced by the application server.
 * All sensitive communication is carried out using signed json web tokens over tls.
-* Zelta Chat provides real time end to end encrypted chat.
+* Zelta Chat provides real time end to end encrypted group chat.
 
 ### Requirement
 Node JS (v8 and above)
