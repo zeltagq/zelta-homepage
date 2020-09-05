@@ -166,7 +166,7 @@ $ zelta chatroom
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/chatroom.gif">
 </p>
 
-*Zelta can support multiple chat servers. Currently there are two : asia and europe. You can always host and contribute more servers.*
+*Zelta supports multiple chat servers. Currently there are two : asia and europe (default). You can always host and contribute more servers.*
 ```sh
 $ zelta region <region>
 ```
@@ -206,6 +206,8 @@ $ zelta chat
 * ```destroy``` : Only takes effect when used by the room creator. Destroys the room and releases the room name. Gives a 30 second headstart.
 
 *If you have not used the ```timezone``` command to configure your local timezone, UTC/GMT time is shown by default.*
+
+*For emojis you can use an OS provided emoji panel or use the following syntax - ```:emoji_name:``` Example : ```:smile:``` This will render as a smiley emoji for the receiver. Refer this list for emoji names : [emoji-list](https://raw.githubusercontent.com/omnidan/node-emoji/master/lib/emoji.json)*
 
 *Logout. You should logout after each session on an untrusted device. If you dont logout, the access token expires in 24 hrs.*
 ```sh
