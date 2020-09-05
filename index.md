@@ -11,16 +11,17 @@
 </p>
 
 ### Project Zelta
-*Zelta is a secure and anonymous messaging service. It only has a cli client to protect you against various web and mobile vulnerabilities. It is cross platform compatible with the only runtime dependency being Node JS.*
+*Zelta is an open source, secure, anonymous and feature rich messaging service for the terminal.*
 
 ### Security & Encryption (High Level Overview)
 * Zelta does not collect any personal information.
 * Zelta does not log your ip address nor does it store cookies and trackers.
 * Your messages are only stored until you see them. Once you view them, all records of their existence are completely erased. So do remember to screenshot important messages.
-* User passwords and group passphrases are converted to salted hashes before they are stored in the database (Bcrypt JS)
+* User passwords and group passphrases are converted to salted hashes before they are stored in the database.
 * The database server hardware encrypts all data at rest.
-* Messages are encrypted using AES-256 (Crypto JS) with rotating cryptographic keys produced by the application server.
+* Messages are encrypted using AES-256 with rotating cryptographic keys produced by the application server.
 * All sensitive communication is carried out using signed json web tokens over tls.
+* Zelta Chat provides real time end to end encrypted chat.
 
 ### Requirement
 Node JS (v8 and above)
@@ -173,6 +174,24 @@ $ zelta region <region>
 
 * Passphrase : Must have a minimum length of 8
 * Encryption : There are two choices for end to end encryption : Rabbit and AES
+
+*You can enable ```typing-effect``` to have incoming chat messages typed on your screen (matrix style!). This may not work on every terminal and currently doesnt support emojis. It is not recommended to use it in busy rooms as the animation can create a backlog of messages.*
+```sh
+$ zelta typing-effect <value>
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/typing-effect.gif">
+</p>
+
+*Head over to a chatroom to see if it works*
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/typing-chat.gif">
+</p>
+
+*You can customize the typing speed by setting the delay (in ms) between the printing of each character. Use the ```typing-delay``` command. Recommended value is between 100 - 130. Default is 115.*
+```sh
+$ zelta typing-delay 120
+```
 
 *Logout. You should logout after each session on an untrusted device. If you dont logout, the access token expires in 24 hrs.*
 ```sh
