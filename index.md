@@ -3,10 +3,12 @@
 </head>
 
 ### Updates
-* The authentication system used by zelta has now been open sourced.
-* The source code can be found at [ZUM](https://github.com/zumapi)
-* Stable version with major improvements in encryption and performance coming soon!
-* Upcoming features : Live chat
+* Stable version 1.0 (Code Blue) is live!
+* New features : Live Chat
+
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/simple-chat-1.gif">
+</p>
 
 ### Project Zelta
 *Zelta is a secure and anonymous messaging service. It only has a cli client to protect you against various web and mobile vulnerabilities. It is cross platform compatible with the only runtime dependency being Node JS.*
@@ -18,7 +20,7 @@
 * User passwords and group passphrases are converted to salted hashes before they are stored in the database (Bcrypt JS)
 * The database server hardware encrypts all data at rest.
 * Messages are encrypted using AES-256 (Crypto JS) with rotating cryptographic keys produced by the application server.
-* All sensitive communication is carried out using signed json web tokens over https.
+* All sensitive communication is carried out using signed json web tokens over tls.
 
 ### Requirement
 Node JS (v8 and above)
@@ -35,7 +37,7 @@ yarn global add zelta
 
 *Display a list of all the available commands*
 ```sh
-$ zelta help
+$ zelta
 ```
 
 *Register a new username*
@@ -154,6 +156,23 @@ $ zelta kick <user> <group>
 <p align="center">
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/kick.gif">
 </p>
+
+*Create a chatroom*
+```sh
+$ zelta chatroom
+```
+<p align="center">
+  <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/chatroom.gif">
+</p>
+
+*Zelta can support multiple chat servers. Currently there are two : asia and europe. You can always host and contribute more servers.*
+```sh
+$ zelta region <region>
+```
+*When you use the ```chatroom``` command, a chatroom is created on that server. The room name must be unique for the server. The creator of the room is the room owner and reserves the right to destroy the room. Until the room is destroyed, it will be live for any participant with the room name and passphrase.*
+
+* Passphrase : Must have a minimum length of 8
+* Encryption : There are two choices for end to end encryption : Rabbit and AES
 
 *Logout. You should logout after each session on an untrusted device. If you dont logout, the access token expires in 24 hrs.*
 ```sh
