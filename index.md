@@ -6,7 +6,7 @@
 Update Priority : Breaking changes | Required update
 * Stable version 1.0 (Code Blue) is live!
 * Security : A key id pool was used to communicate the key value to the server for signing jwt or encrypting messages during beta. This could pose a security threat because of the finite number of key ids in the pool. In this version a new key as well as a unique key id is generated for each use. The server runs a cron job to regularly purge used keys in the database to free up space.
-* New features : Live Chat, Server Regions
+* New features : Encrypted Live Chat, Server Regions
 
 <p align="center">
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/simple-chat-1.gif">
