@@ -19,6 +19,7 @@ Update Priority : Breaking changes | Required update
 * [Inbox](https://www.zelta.gq/#inbox)
 * [Timezone](https://www.zelta.gq/#timezone)
 * [Live Chat](https://www.zelta.gq/#chat)
+* [Donate](https://www.zelta.gq/#donate)
 
 ### Project Zelta
 *Zelta is an open source, secure, anonymous and feature rich messaging service for the terminal.*
@@ -242,6 +243,13 @@ $ zelta logout
 <p align="center">
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/logout.gif">
 </p>
+
+### Donate
+
+*Your donation can help create more chat servers, upgrade and fund existing servers. Choose your crypto poison!*
+* Monero (XMR) : 46K581N2djtSX3FzZDiJB7NKBqcvx1QwXKsfkhuk7T96iFEr5hdHUWMhx63ZcLQikhEsMtoi56XY3MU2fCSW5okJ53gwwW9
+* Ethereum (ETH) : 0x25D2ba750851891DC13BF8E635bd97C1F03F3114
+* Bitcoin (BTC) : bc1qwjlh5e6hwyg2mlzmg6e2v9t2x66w7mw9fljyj0
 
 <br><br>
 <hr style="height:10px;border-width:10px;color:gray;background-color:gray">
