@@ -3,7 +3,8 @@
 </head>
 
 ### Updates
-Update Priority : Breaking changes | Required update
+Zelta has now stopped all native servers. You can deploy your own servers using the codebase. Scroll down to the bottom for link to the repository.
+
 * Stable version 1.0 (Code Blue) is live!
 * Security : A key id pool was used to communicate the key value to the server for signing jwt or encrypting messages during beta. This could pose a security threat because of the finite number of key ids in the pool. In this version a new key as well as a unique key id is generated for each use. The server runs a cron job to regularly purge used keys in the database to free up space.
 * New features : Encrypted Live Chat, Server Regions
@@ -19,7 +20,6 @@ Update Priority : Breaking changes | Required update
 * [Inbox](https://www.zelta.gq/#inbox)
 * [Timezone](https://www.zelta.gq/#timezone)
 * [Live Chat](https://www.zelta.gq/#chat)
-* [Donate](https://www.zelta.gq/#donate)
 
 ### Project Zelta
 *Zelta is an open source, secure, anonymous and feature rich messaging service for the terminal.*
@@ -187,7 +187,7 @@ $ zelta chatroom
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/chatroom.gif">
 </p>
 
-*Zelta supports multiple chat servers. Currently there are two : asia and europe (default). You can always host and contribute more servers.*
+*Zelta can support multiple chat servers in diffrent regions.*
 ```sh
 $ zelta region <region>
 ```
@@ -243,13 +243,6 @@ $ zelta logout
 <p align="center">
   <img src = "https://raw.githubusercontent.com/zeltagq/docs/master/logout.gif">
 </p>
-
-### Donate
-
-*Your donation can help create more chat servers, upgrade and fund existing servers. Choose your crypto poison!*
-* Ethereum (ETH) : 0x25D2ba750851891DC13BF8E635bd97C1F03F3114
-* Bitcoin (BTC) : bc1qwjlh5e6hwyg2mlzmg6e2v9t2x66w7mw9fljyj0
-* Ripple (XRP) : r2RRiD4cPAki2M8yMzwpuoDXJT7MfMz4R
 
 <br><br>
 <hr style="height:10px;border-width:10px;color:gray;background-color:gray">
