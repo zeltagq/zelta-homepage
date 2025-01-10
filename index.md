@@ -14,12 +14,12 @@ Zelta has now stopped all native servers. You can deploy your own servers using 
 </p>
 
 ### Sections
-* [General](https://www.zelta.gq/#general)
-* [Messaging](https://www.zelta.gq/#messaging)
-* [Groups](https://www.zelta.gq/#groups)
-* [Inbox](https://www.zelta.gq/#inbox)
-* [Timezone](https://www.zelta.gq/#timezone)
-* [Live Chat](https://www.zelta.gq/#chat)
+* [General](https://zelta.caprico.io/#general)
+* [Messaging](https://zelta.caprico.io/#messaging)
+* [Groups](https://zelta.caprico.io/#groups)
+* [Inbox](https://zelta.caprico.io/#inbox)
+* [Timezone](https://zelta.caprico.io/#timezone)
+* [Live Chat](https://zelta.caprico.io/#chat)
 
 ### Project Zelta
 *Zelta is an open source, secure, anonymous and feature rich messaging service for the terminal.*
@@ -246,7 +246,5 @@ $ zelta logout
 
 <br><br>
 <hr style="height:10px;border-width:10px;color:gray;background-color:gray">
-<p align="center"><b>CREATED BY : ZELAXO</b></p>
-<p align="center"><a href = "https://www.linkedin.com/in/zelaxo/">Linkedin</a> | <a href = "https://github.com/zelaxo">Github</a></p>
 <p align="center"><a href = "https://github.com/zeltagq">Show me the code</a></p>
 <hr style="height:10px;border-width:10px;color:gray;background-color:gray">
